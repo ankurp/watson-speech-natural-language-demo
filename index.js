@@ -7,7 +7,7 @@ const {
   SpeechToTextV1,
   NaturalLanguageUnderstandingV1
 } = require('watson-developer-cloud');
-const WatsonSpeech = require('watson-speech');
+const { SpeechToText } = require('watson-speech');
 const program = require('commander');
 const ora = require('ora');
 const {
@@ -96,7 +96,7 @@ function getText(url, token) {
   return new Promise((resolve, reject) => {
     const text = [];
     const err = [];
-    const stream = WatsonSpeech.SpeechToText.recognizeFile({
+    const stream = SpeechToText.recognizeFile({
       token: token,
       file: url,
       format: true
