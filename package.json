@@ -2,9 +2,9 @@
   "name": "watson-speech-analysis",
   "version": "1.0.1",
   "description": "Speech Analyzer CLI tool powered by IBM Watson",
-  "main": "index.js",
+  "main": "watson.js",
   "bin": {
-    "watson": "index.js"
+    "watson": "watson.js"
   },
   "scripts": {
     "start": "node .",
